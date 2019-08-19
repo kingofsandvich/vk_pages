@@ -8,7 +8,7 @@
 <body>
 	
 	<div id="vk_api_transport"></div>
-	
+	<button onclick="VK.Auth.login(function(response){console.table(response);},123);"></button>
 	<script type="text/javascript">
 	  VK.init({
 	    apiId: 7083875
@@ -22,7 +22,7 @@
 	    document.getElementById("vk_api_transport").appendChild(el);
 	  }, 0);
 
-	  VK.Auth.login.then(response => { console.table(response); });
+	  // VK.Auth.login(function(response){console.table(response);},123);
 
 	</script>
 </body>
