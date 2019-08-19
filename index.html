@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VK auth demo</title>
+	<script src="https://vk.com/js/api/openapi.js?162" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div id="vk_api_transport"></div>
+	<script type="text/javascript">
+	  VK.init({
+	    apiId: 7083875
+	  });
+	</script>
+	setTimeout(function() {
+	    var el = document.createElement("script");
+	    el.type = "text/javascript";
+	    el.src = "https://vk.com/js/api/openapi.js?162";
+	    el.async = true;
+	    document.getElementById("vk_api_transport").appendChild(el);
+	  }, 0);
+</body>
+</html>
